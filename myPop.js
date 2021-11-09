@@ -1,5 +1,7 @@
 Array.prototype.myPopMethod = function () {
-	if (this.length === 0) return undefined;
+	if (this.length === 0) {
+		return undefined;
+	}
 
 	let lastEl = this[this.length - 1];
 	this.length = this.length - 1;
